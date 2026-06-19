@@ -67,11 +67,26 @@ i18n = {
     open = false;
   };
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   services.xserver.enable = true;
 
   services.displayManager.ly.enable = true;
+
+  services.xserver.displayManager.session = [
+    {
+      manage = "window";
+      name = "rill";
+      start = ''
+        exec rill
+      '';
+    }
+  ];
+
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    WLR_NO_HARDWARE_CURSORS = "1";
+  };
 
   services.printing.enable = true;
 
@@ -99,6 +114,7 @@ i18n = {
     fish
     starship
     home-manager
+    niri
   ];
 
   users.users.ebits = {

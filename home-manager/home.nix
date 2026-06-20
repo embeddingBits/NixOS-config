@@ -4,7 +4,6 @@
     ./home-packages.nix
     inputs.stylix.homeModules.stylix
     inputs.nixvim.homeModules.nixvim
-    ./../dotfiles/nixvim
   ];
 
   home.username = user;
@@ -17,7 +16,7 @@
         TERMINAL = "foot";
         LANG = "en_US.UTF-8";
   };
-
+  programs.nixvim.enable = true;
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;

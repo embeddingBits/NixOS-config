@@ -14,5 +14,6 @@
     ./river
     ./rill
     ./starship
+    ./zathura
   ];
 }

@@ -11,7 +11,6 @@ let
     "rmpc"
     "waybar"
     "yazi"
-    "zathura"
   ];
 
   configLinks = builtins.listToAttrs (

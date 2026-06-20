@@ -36,4 +36,14 @@
       guioptions = "none";
     };
   };
+
+  xdg.configFile."gtk-3.0/gtk.css".text = ''
+    headerbar.default-decoration {
+      background-color: #1d2021;
+      border-bottom: 1px solid #3c3836;
+    }
+    headerbar.default-decoration label {
+      color: #ebdbb2;
+    }
+  '';
 }

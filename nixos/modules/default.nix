@@ -116,6 +116,15 @@ i18n = {
     niri
   ];
 
+   services.openssh = {
+     enable = true;
+     settings = {
+           PasswordAuthentication = false;
+           KbdInteractiveAuthentication = false;
+     };
+   };   
+
+
   users.users.ebits = {
     isNormalUser = true;
     shell = pkgs.fish;

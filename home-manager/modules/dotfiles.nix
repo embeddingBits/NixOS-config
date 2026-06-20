@@ -5,10 +5,7 @@ let
   configDir = "${dotfiles}/.config";
 
   configDirs = [
-    "lazygit"
-    "mpd"
     "niri"
-    "rmpc"
     "waybar"
     "yazi"
   ];

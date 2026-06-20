@@ -9,14 +9,7 @@
    '("3099818c72f4462e50fdaa7ff34497cc1acb431bc2c8975f680b0a1761546a7d"
      "f1e8339b04aef8f145dd4782d03499d9d716fdc0361319411ac2efc603249326"
      default))
- '(package-selected-packages
-   '(company-box consult dashboard doom-modeline doom-themes
-                 evil-collection general indent-bars ligature magit
-                 marginalia neotree nerd-icons-completion
-                 nerd-icons-dired orderless org-appear org-modern
-                 org-roam-ui pdf-tools rg spacious-padding
-                 treesit-auto typst-preview typst-ts-mode
-                 vertico-posframe yasnippet-snippets)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

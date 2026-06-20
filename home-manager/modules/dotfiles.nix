@@ -8,8 +8,6 @@ let
     "lazygit"
     "mpd"
     "niri"
-    "river"
-    "rill"
     "rmpc"
     "waybar"
     "yazi"

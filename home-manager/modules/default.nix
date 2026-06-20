@@ -11,6 +11,8 @@
     ./gtk.nix
     ./kitty
     ./foot
+    ./river
+    ./rill
     ./starship
   ];
 }

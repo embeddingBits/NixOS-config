@@ -10,9 +10,6 @@
       scrollback = {
         lines = 10000;
       };
-      "cursor" = {
-        color = "d8dee9 d8dee9";
-      };
       "colors-dark" = {
         background = "1d2021";
         foreground = "d4be98";

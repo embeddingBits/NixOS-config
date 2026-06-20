@@ -13,7 +13,6 @@ let
     "foot"
     "fuzzel"
     "ghostty"
-    "git"
     "kitty"
     "lazygit"
     "mpd"
@@ -54,11 +53,6 @@ in
     ".local/bin/sshot" = {
       source = config.lib.file.mkOutOfStoreSymlink
         "${dotfiles}/sshot";
-    };
-
-    ".ssh/config" = {
-      source = config.lib.file.mkOutOfStoreSymlink
-        "${dotfiles}/.ssh/config";
     };
 
     "typstDocTemplate" = {

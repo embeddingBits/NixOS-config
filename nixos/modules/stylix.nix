@@ -28,12 +28,6 @@
           package = pkgs.nerd-fonts.jetbrains-mono;
           name = "JetBrainsMono Nerd Font Propo";
         };
-        sizes = {
-          applications = 10;
-          terminal = 12;
-          desktop = 10;
-          popups = 10;
-        };
       };
     };
   };

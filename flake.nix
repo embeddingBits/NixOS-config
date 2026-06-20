@@ -22,6 +22,11 @@
       url = "github:dmkhitaryan/river-next-nix-module";
       flake = false;
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:

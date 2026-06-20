@@ -10,7 +10,7 @@
     yazi zathura
     lazygit
     obs-studio firefox vesktop
-    neovim emacs
+    emacs
     steam-run libgcc gcc zig go gnumake
     python313 python313Packages.pip
     lua-language-server

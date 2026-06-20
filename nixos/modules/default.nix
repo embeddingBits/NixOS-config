@@ -107,7 +107,6 @@ i18n = {
   programs.fish.enable = true;
 
   environment.systemPackages = with pkgs; [
-    neovim
     emacs
     wget
     git

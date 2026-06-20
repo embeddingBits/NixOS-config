@@ -5,21 +5,13 @@ let
   configDir = "${dotfiles}/.config";
 
   configDirs = [
-    "btop"
-    "cava"
-    "fastfetch"
-    "fnott"
-    "fuzzel"
-    "ghostty"
     "lazygit"
     "mpd"
     "niri"
-    "qutebrowser"
     "river"
     "rill"
     "rmpc"
     "waybar"
-    "wlogout"
     "yazi"
     "zathura"
   ];

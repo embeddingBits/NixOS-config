@@ -23,19 +23,9 @@
 
     functions = {
       fetch = {
-        description = "alias fetch fastfetch -c ~/.config/fastfetch/small.jsonc --logo-color-1 blue --logo-color-2 red";
+        description = "alias fetch fastfetch --logo-color-1 blue --logo-color-2 red";
         wraps = "fastfetch";
-        body = "fastfetch -c ~/.config/fastfetch/small.jsonc --logo-color-1 blue --logo-color-2 red $argv";
-      };
-      ls = {
-        description = "alias ls eza --icons";
-        wraps = "eza";
-        body = "eza --icons $argv";
-      };
-      nv = {
-        description = "alias nv nvim";
-        wraps = "nvim";
-        body = "nvim $argv";
+        body = "fastfetch --logo-color-1 blue --logo-color-2 red $argv";
       };
     };
 
@@ -47,12 +37,10 @@
       gc = "git commit -m";
       gu = "git pull";
       j = "z";
-      tree = "ls --tree";
+      tree = "eza --tree --icons";
+      ls = "eza --icons";
       zb = "zig build";
-      upfor = "uptime -p";
-      pac = "sudo pacman";
-      pacref = "sudo pacman -Syy";
-      pacup = "sudo pacman -Syyu";
+      nv = "nvim";
       tnew = "tmux new -s";
       tls = "tmux ls";
       ta = "tmux attach -t";

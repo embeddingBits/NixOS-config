@@ -1,5 +1,10 @@
 { lib, pkgs, inputs, ... }: {
   imports = [
+    ./btop
+    ./cava
+    ./fastfetch
+    ./fnott
+    ./fuzzel
     ./cli
     ./dotfiles.nix
     ./fish

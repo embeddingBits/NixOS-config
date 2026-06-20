@@ -9,21 +9,27 @@
     ffmpeg imagemagick
     yazi zathura
     lazygit
-    obs-studio firefox vesktop
+    # Applications
+    obs-studio mpv onlyoffice-desktopeditors firefox vesktop
     emacs
     steam-run libgcc gcc zig go gnumake
     python313 python313Packages.pip
     lua-language-server
     ripgrep fd fzf jq bat eza
     grim slurp grimblast hyprpicker
+    # Wayland
     nwg-look wlr-randr swaylock wl-clipboard wtype swaybg
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
     wayland-utils wayland-scanner pkg-config
     brightnessctl libnotify
+    # Fonts
     nerd-fonts.jetbrains-mono nerd-fonts.iosevka
-    flatpak zip unzip unrar
+    # Zip and rar
+    zip unzip unrar
+    # Disk Utilities
     gparted mesa-demos
-    bluez bluez-tools
+    # Bluetooth
+    bluez bluez-tools blueman
     xdg-utils
     xwayland-satellite
     zoxide

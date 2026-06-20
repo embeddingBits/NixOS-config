@@ -1,11 +1,4 @@
 { pkgs, ... }: {
-  services.openssh = {
-      enable = true;
-      settings = {
-            PasswordAuthentication = false;
-            KbdInteractiveAuthentication = false;
-      };
-  };
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;

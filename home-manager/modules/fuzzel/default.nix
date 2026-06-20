@@ -25,19 +25,13 @@ in {
     };
   };
 
-  xdg.configFile."fuzzel/fuzzel-launch.sh" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.config/fuzzel/fuzzel-launch.sh";
-  };
   xdg.configFile."fuzzel/fuzzel-bluetooth.sh" = {
     source = ./fuzzel-bluetooth.sh;
-  };
-  xdg.configFile."fuzzel/fuzzel-search.sh" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.config/fuzzel/fuzzel-search.sh";
   };
   xdg.configFile."fuzzel/fuzzel-emoji.sh" = {
     source = ./fuzzel-emoji.sh;
   };
   xdg.configFile."fuzzel/emojis.txt" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.config/fuzzel/emojis.txt";
+    source = ./emojis.txt;
   };
 }

@@ -1,10 +1,4 @@
 { lib, pkgs, ... }: {
-  options.services.kmscon.config = lib.mkOption {
-    type = lib.types.attrsOf lib.types.anything;
-    default = {};
-    visible = false;
-    description = "Compat shim for stylix kmscon module";
-  };
 
   config = {
     stylix = {

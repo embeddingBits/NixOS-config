@@ -1,43 +1,36 @@
 {
   description = "eBits NixOS Configuration";
-
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-26.05";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
     stylix = {
-      url = "github:nix-community/stylix/release-26.05";
+      url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     home-manager = {
-      url = "github:nix-community/home-manager/release-26.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     heliim = {
       url = "github:schembriaiden/helium-browser-nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     river-next = {
       url = "github:dmkhitaryan/river-next-nix-module";
       flake = false;
     };
-
-    nixvim = {
-      url = "github:nix-community/nixvim/nixos-26.05";
+    ebits-nixvim = {
+      url = "github:embeddingbits/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
   let
     system = "x86_64-linux";
-    homeStateVersion = "26.05";
+    homeStateVersion = "25.05";
     user = "ebits";
     hosts = [
-      { hostname = "workstation"; stateVersion = "26.05"; }
+      { hostname = "workstation"; stateVersion = "25.05"; }
     ];
-
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
       specialArgs = {
@@ -56,7 +49,6 @@
           inherit (host) hostname stateVersion;
         };
       }) {} hosts;
-
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {

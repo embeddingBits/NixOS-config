@@ -3,7 +3,7 @@
     ./modules
     ./home-packages.nix
     inputs.stylix.homeModules.stylix
-    inputs.nixvim.homeModules.nixvim
+    inputs.ebits-nixvim.homeManagerModules.default
   ];
 
   home.username = user;

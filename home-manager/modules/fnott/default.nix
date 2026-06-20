@@ -25,6 +25,6 @@ in {
   };
 
   xdg.configFile."fnott/alert.wav" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${dotfiles}/.config/fnott/alert.wav";
+    source = ./alert.wav; 
   };
 }

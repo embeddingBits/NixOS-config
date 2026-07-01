@@ -14,6 +14,9 @@
       set -Ux GOBIN  $HOME/.local/go/bin
       fish_add_path $GOBIN
       test -f "/home/ebits/.openclaw/completions/openclaw.fish"; and source "/home/ebits/.openclaw/completions/openclaw.fish"
+      if test -S "$XDG_RUNTIME_DIR/gcr/ssh"
+          set -x SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gcr/ssh"
+      end
     '';
 
     interactiveShellInit = ''

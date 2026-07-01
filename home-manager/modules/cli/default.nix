@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  home.file.".config/environment.d/90-ssh-agent.conf".text = ''
+    SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+  '';
+
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;

@@ -8,7 +8,12 @@ input {
     touchpad {
         tap
     }
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse 
+}
+
+cursor {
+      xcursor-theme "Bibata-Modern-Amber"
+      xcursor-size 24
 }
 
 output "eDP-1" { }
@@ -212,7 +217,7 @@ binds {
 }
 
 
-spawn-at-startup "swaybg -i ~/Downloads/wallpapers/sushi.jpg"
-spawn-at-startup "waybar" "-c" "/home/ebits/.config/waybar/gruvbox_blocks/niri.jsonc" "-s" "/home/ebits/.config/waybar/gruvbox_blocks/niri.css"
+spawn-at-startup "swaybg -i ~/Pictures/wallpapers/sushi.jpg "
+spawn-at-startup "waybar" "-c" "/home/ebits/.config/waybar/niri.jsonc" "-s" "/home/ebits/.config/waybar/niri.css"
 spawn-at-startup "fnott"
 spawn-at-startup "xwayland-satellite"

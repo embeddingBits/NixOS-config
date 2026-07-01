@@ -15,6 +15,9 @@
         VISUAL = "nvim";
         TERMINAL = "foot";
         LANG = "en_US.UTF-8";
+        SSH_AUTH_SOCK = "$XDG_RUNTIME_DIR/gcr/ssh";
+        XCURSOR_THEME = "Bibata-Modern-Amber";
+        XCURSOR_SIZE = "24";
   };
   programs.nixvim.enable = true;
 

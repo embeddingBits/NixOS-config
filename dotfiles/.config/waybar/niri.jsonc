@@ -57,6 +57,7 @@
             "rewrite": {
                   "": "󰣆  {}",
                   "firefox": "󰈹 Firefox",
+                  "helium": " Helium",
                   "kitty": " Kitty",
                   "discord": "  Discord",
                   "emacs": " Emacs"

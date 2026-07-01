@@ -3,6 +3,8 @@
     ./stylix.nix
   ];
 
+  hardware.bluetooth.enable = true;
+
   boot.loader = {
     grub = {
       enable = true;
@@ -25,9 +27,9 @@
     fontconfig = {
       enable = true;
       defaultFonts = {
-        sansSerif = [ "JetBrainsMono Nerd Font Propo" ];
-        serif = [ "JetBrainsMono Nerd Font Propo" ];
-        monospace = [ "JetBrainsMono Nerd Font Propo" ];
+        sansSerif = [ "Iosevka Nerd Font Propo" ];
+        serif = [ "Iosevka Nerd Font Propo" ];
+        monospace = [ "Iosevka Nerd Font Propo" ];
       };
     };
   };
@@ -103,6 +105,7 @@ i18n = {
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  programs.niri.enable = true;
   programs.firefox.enable = true;
   programs.fish.enable = true;
 
@@ -113,9 +116,8 @@ i18n = {
     fish
     starship
     home-manager
-    niri
   ];
-
+    
    services.openssh = {
      enable = true;
      settings = {

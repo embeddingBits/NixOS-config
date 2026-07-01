@@ -21,7 +21,7 @@
     nwg-look wlr-randr swaylock wl-clipboard wtype swaybg
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
     wayland-utils wayland-scanner pkg-config
-    brightnessctl libnotify
+    brightnessctl libnotify hyprshot
     # Fonts
     nerd-fonts.jetbrains-mono nerd-fonts.iosevka
     # Zip and rar
